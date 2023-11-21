@@ -19,11 +19,11 @@ from selenium.webdriver.common.by import By
 while True:
     try:
         driver.get(url)
-        time.sleep(0.25)
+        time.sleep(0.75)
         driver.find_element(By.ID, "ionid").send_keys(ionId)
         driver.find_element(By.ID, "pwd").send_keys(ionPw)
         driver.find_element(By.ID, "pwd").send_keys(Keys.ENTER)
-        time.sleep(0.5)
+        time.sleep(0.75)
     except:
         break
 
